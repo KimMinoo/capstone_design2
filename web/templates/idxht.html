@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Map with Search</title>
+    <style>
+
+	
+        #section {
+            /* Your existing styles here */
+            height: 100vh;
+        }
+
+        #iframe-container {
+            position: relative;
+            width: 83%;
+            height: 92%;
+        }
+
+        #frame {
+            position: absolute;
+            width: 83%;
+            height: 92%;
+            border: none;
+        }
+        #header {
+	background-color:lightgrey;
+	height:50px;
+	}
+	#nav {
+	background-color:blue;
+	width:14%;
+	height:92%;
+	float:left;
+	}
+	#section {
+	background-color:red;
+	width:83%;
+	float:left;
+	padding:10px;
+	}
+
+
+    </style>
+</head>
+<body>
+    
+    <div id="header">
+        <h2>안심귀가서비스</h2>
+    </div>
+    <div id="nav">
+        <h2>    
+		<form action="/search" method="post">
+	        <label for="departure_lat">Departure Latitude:</label>
+	        <input type="text" name="departure_lat" id="departure_lat"><br>
+	        <label for="departure_lon">Departure Longitude:</label>
+	        <input type="text" name="departure_lon" id="departure_lon"><br>
+	        <label for="destination_lat">Destination Latitude:</label>
+	        <input type="text" name="destination_lat" id="destination_lat"><br>
+	        <label for="destination_lon">Destination Longitude:</label>
+        	<input type="text" name="destination_lon" id="destination_lon"><br>
+	        <input type="submit" value="Search">
+    		</form>
+    	</h2>
+    </div>
+    <div id="section">
+        <iframe id="frame" src="http://127.0.0.1:5000/map" frameborder="0"></iframe>
+    </div>
+</body>
+</html>

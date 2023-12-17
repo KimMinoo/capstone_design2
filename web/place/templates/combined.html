@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Map with Search</title>
+    <style>
+        /* Add CSS styling as needed */
+        body {
+            display: flex;
+            flex-direction: row;
+        }
+        #search-container {
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <div id="search-container">
+        <!-- Include your search.html content here -->
+        {% include 'search.html' %}
+    </div>
+    <div id="map-container">
+        <!-- Include your map.html content here -->
+        {% include 'map.html' %}
+    </div>
+</body>
+</html>

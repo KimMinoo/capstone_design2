@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ebc5423172ccda94a186dd484ebfcad9 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_ebc5423172ccda94a186dd484ebfcad9" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_ebc5423172ccda94a186dd484ebfcad9 = L.map(
+                "map_ebc5423172ccda94a186dd484ebfcad9",
+                {
+                    center: [37.283905475, 127.01320079561467],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 17,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_77bdd0a419c332b42a093d4746307658 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_ebc5423172ccda94a186dd484ebfcad9);
+        
+    
+            var marker_321dfcc8ee1b4c1a5a0c81976785d503 = L.marker(
+                [37.2840042, 127.0159981],
+                {}
+            ).addTo(map_ebc5423172ccda94a186dd484ebfcad9);
+        
+    
+        var popup_b0f36f0559cc00b6beaabe68966fba83 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_004d7cace61952cc3399967f53030424 = $(`<div id="html_004d7cace61952cc3399967f53030424" style="width: 100.0%; height: 100.0%;">원천관</div>`)[0];
+                popup_b0f36f0559cc00b6beaabe68966fba83.setContent(html_004d7cace61952cc3399967f53030424);
+            
+        
+
+        marker_321dfcc8ee1b4c1a5a0c81976785d503.bindPopup(popup_b0f36f0559cc00b6beaabe68966fba83)
+        ;
+
+        
+    
+    
+            var marker_4685f4452567cee07a4d5a06ef27d964 = L.marker(
+                [37.28380675, 127.01040349122934],
+                {}
+            ).addTo(map_ebc5423172ccda94a186dd484ebfcad9);
+        
+    
+            var icon_a6825948b63e1ae7504ecaccd24ab5f0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4685f4452567cee07a4d5a06ef27d964.setIcon(icon_a6825948b63e1ae7504ecaccd24ab5f0);
+        
+    
+        var popup_431f29ec6ffdc91e678c8f208491911d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_96da605bd1030ee2674f0d4eea908360 = $(`<div id="html_96da605bd1030ee2674f0d4eea908360" style="width: 100.0%; height: 100.0%;">광교중앙역</div>`)[0];
+                popup_431f29ec6ffdc91e678c8f208491911d.setContent(html_96da605bd1030ee2674f0d4eea908360);
+            
+        
+
+        marker_4685f4452567cee07a4d5a06ef27d964.bindPopup(popup_431f29ec6ffdc91e678c8f208491911d)
+        ;
+
+        
+    
+    
+            var poly_line_f9668c59c8b29a2085fc93289c98266d = L.polyline(
+                [[37.28380675, 127.01040349122934], [37.28387035431923, 127.00999754523228], [37.28410771400465, 127.01011951040046], [37.28422879155462, 127.010168962088], [37.28427036364143, 127.01018593903386], [37.28444151060208, 127.01025998172555], [37.28447308850972, 127.01028665527711], [37.28460176878964, 127.01045956766993], [37.28471633224679, 127.01061179459111], [37.28480037314089, 127.01070265193884], [37.28485130395796, 127.01075771232996], [37.284863632464045, 127.01082253263284], [37.28491667785512, 127.01110144610368], [37.28496971348452, 127.01138033746967], [37.284984077987005, 127.01145588217447], [37.28492957894834, 127.01149889510324], [37.28479667453146, 127.01160380412904], [37.28466378799679, 127.011708701387], [37.28454694062855, 127.01179871649602], [37.284429922523294, 127.01188887682486], [37.284415522582144, 127.01189997108618], [37.28440300727488, 127.01191255354736], [37.28429046459179, 127.01202569787915], [37.28417792178672, 127.01213883961714], [37.28416756808301, 127.01214925788896], [37.28415560949279, 127.01216438843254], [37.284046055873375, 127.01230298289876], [37.28396468239251, 127.01240593685615], [37.28392724143767, 127.01242369096876], [37.2838841346176, 127.01244413940684], [37.28387902210272, 127.01247219425584], [37.28384253504819, 127.01267257154386], [37.28380983621503, 127.01285214474096], [37.28380488579643, 127.0128793095528], [37.28380108125993, 127.01290148982795], [37.28379502307343, 127.01293677276324], [37.28378896321287, 127.01297208954654], [37.28378185925188, 127.01301347316804], [37.28376395994195, 127.013052160255], [37.28371937519711, 127.01314854517985], [37.283681998344726, 127.01323364100683], [37.28362348712473, 127.01330682709605], [37.28344711018345, 127.0135274324634], [37.28343635061826, 127.01354089438104], [37.28342845506679, 127.01355333160627], [37.28327534990348, 127.0137945970268], [37.28324065236967, 127.01385795239536], [37.28322996189712, 127.01389263757282], [37.2832247883093, 127.0139094161396], [37.28322642537889, 127.0143099885225], [37.28322652185434, 127.0143335017023], [37.28322756226444, 127.01437925013704], [37.2832308232306, 127.01452289981768], [37.28323352981801, 127.01464218418096], [37.28322481963758, 127.01468944144264], [37.2832093849206, 127.01477316546529], [37.28320459269868, 127.01482275975376], [37.28319142081053, 127.01495894091684], [37.28319627813161, 127.0152354641445], [37.28318623792269, 127.01540220524925], [37.28318281644937, 127.01551015551632], [37.28318507162357, 127.01570088431264], [37.28318844964295, 127.01577790405564], [37.28318893486177, 127.01578898775944], [37.28319183610581, 127.0158552373591], [37.283200018790126, 127.0160421243334], [37.28321751914324, 127.01616225707924], [37.28324313944039, 127.0163380608044], [37.28328149815711, 127.01632769639312], [37.28342140715199, 127.0162898696632], [37.28361043447162, 127.01622904023202], [37.28393462605732, 127.01612472346127], [37.28396193652144, 127.0161159322062], [37.283995340655686, 127.0161050014122], [37.2840042, 127.0159981]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ebc5423172ccda94a186dd484ebfcad9);
+        
+</script>
+</html>

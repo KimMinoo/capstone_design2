@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Map with Search</title>
+    <style>
+
+	
+        #section {
+            /* Your existing styles here */
+            height: 100vh;
+        }
+
+        #iframe-container {
+            position: relative;
+            width: 83%;
+            height: 92%;
+        }
+
+        #frame {
+            position: absolute;
+            width: 83%;
+            height: 92%;
+            border: none;
+        }
+        #header {
+	background-color:lightgrey;
+	height:50px;
+	}
+	#nav {
+	background-color:blue;
+	width:14%;
+	height:92%;
+	float:left;
+	}
+	#section {
+	background-color:red;
+	width:83%;
+	float:left;
+	padding:10px;
+	}
+
+
+    </style>
+</head>
+<body>
+    
+    <div id="header">
+        <h2>안심귀가서비스</h2>
+    </div>
+    <div id="nav">
+        <h2>    
+    		<form action="/search" method="post">
+        		<label for="departure">Departure:</label>
+        		<input type="text" id="departure" name="departure"><br><br>
+        		<label for="destination">Destination:</label>
+        		<input type="text" id="destination" name="destination"><br><br>
+        		<input type="submit" value="Submit">
+    		</form>
+    	</h2>
+    </div>
+    <div id="section">
+        <iframe id="frame" src="http://127.0.0.1:5000/map" frameborder="0"></iframe>
+    </div>
+</body>
+</html>
